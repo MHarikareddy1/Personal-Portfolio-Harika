@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/harilogo.jpg" class="logo">
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Projects</a></li>
+                <li><a href="#portfolio">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark"></i>
+            </ul>
+            <i class="fa-solid fa-bars"></i>
+        </nav>
+        <div class="header-text">
+        <p>Fresher</p>
+        <h1>Hi, I'm <span>Harika</span><br> From Hyderabad</h1>
+        </div>
+    </div>
+</div> 
+<!-------------about------------>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/users.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>As a driven and innovative Electronics and Communication Engineering graduate,I'm passionate about leveraging
+                    my programming expertise and problem-solving skills to drive software development success with a strong 
+                    foundation in computer systems and proficiency in Python, Java, HTML, SQL and Basic knowledge in selenium testing with java.Additionally, I hold a Salesforce AI associate certifiacte showing basic knowledge in salesforce. I excel in 
+                    collaborative environments utilizing my effective communication, critical thinking and analytical abilities, while demonstrating adaptability,quick learning.I am eager to 
+                    apply my skills in software testing,development and maintenance and adapt to emerging technologies.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('internship')">Internship</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Languages</span><br>Python, Java</li>
+                            <li><span>Database Management</span><br>SQL</li>
+                            <li><span>Web Development</span><br>HTML</li>
+                            <li><span>Testing Frameworks</span><br>Selenium Testing with Java</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2024</span><br>B.Tech from BRECW</li>
+                            <li><span>2020</span><br>Intermediate from Narayana Junior College</li>
+                            <li><span>2018</span><br>SSC from Ushodaya High School</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="internship">
+                        <ul>
+                            <li><span>VRVSS INTERN</span><br>Currently undertaking an internship with VRVSS Organisation, enhancing skills in Python programming, SQL database management and effective communication.Gaining hands-on experience in database design and team collaboration through intensive training.</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--------------------Projects-------------------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="projects-list">
+            <div>
+                <h2>Mini Project</h2>
+                <p>My mini project titled Fruit Disease Detection using Image processing leverages image processing techniques and Convolutional Neural Networks (CNN) to accurately identify diseases in fruits. Utilizing a dataset of nearly 300 images, I preprocessed and normalized the data before training a custom CNN model. The model achieved 95% accuracy in classifying fruits as healthy or diseased, demonstrating potential applications in agriculture for early disease detection, so that farmers can take preventive measures and reduce crop losses.Additionally, enabling real-time analysis in the field to further support farmers in making timely decisions. Key techniques employed like2 data augmentation, transfer learning, and hyperparameter tuning to optimize model performance. This project showcases my proficiency in image processing, deep learning, and problem-solving. Highlighting my ability to apply technical skills to real-world problems."</p>
+
+            </div>
+            <div>
+                <h2>Major Project</h2>
+                <p>My major project titled Simulation of 8-Bit and 16-Bit Asynchronous FIFO. I simulated an asynchronous 8-bit and 16-bit FIFO (First-In, First-Out) which is used to manage data transfer between systems operating at different speeds. The simulation involves using of two clocks: a write clock and a read clock, making it asynchronous. The waveform demonstrates how data is written into the FIFO on each rising edge of the write clock when the write enable signal is active and how it is read out on each rising edge of the read clock when the read enable signal is active. Key flags such as "full" and "empty" indicate when the FIFO cannot accept new data. The simulation shows smooth data flow without overlap between the write and read operations, highlighting the efficiency of the FIFO in handling different clock domains, making it ideal for applications like data buffering and communication systems.</p>
+            </div>
+        </div> 
+    </div>
+</div>
+
+<!-------------portfolio---------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Certifications</h1>
+        <div class="certifications-grid">
+          <ul class="certifications-list">
+            <li>Certified by DigiSaksham in Python Programming Language</li>
+            <li>Certified in workshop on Raspberry Pi and Python</li>
+            <li>Certificate of Merit Award in academics</li>
+            <li>Certified in Salesforce AI Associate</li>
+          </ul>
+        </div>
+    </div>
+</div>
+<!--------------contact------------------>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> harikamedepally03@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 8185999282</p>
+                <div class="social-icons">
+                     <a href="https://instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                     <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="images/harikaresumere.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" rows="6" placeholder="Your message"></textarea>
+                    <button type="Submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright Harika. Made with dedication<i class="fa-solid fa-heart"></i> by medepally </p>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links")
+    var tabcontents = document.getElementsByClassName("tab-contents")
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+</script>
+
+    
+</body>
+</html>
